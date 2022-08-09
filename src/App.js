@@ -43,13 +43,13 @@ function App() {
         {!pokemonChosen ? (
         <>
         <h1>Please choose a Pokemon</h1>
-        
+        <img className='pokemonImg' src='https://images2.alphacoders.com/718/thumbbig-718222.webp  ' />
         </>
         ) : 
         (
         <>
         <h1>{pokemon.name}</h1>
-        <img src={pokemon.img} />
+        <img className='pokImg' src={pokemon.img} />
         <h3>Species: {pokemon.species}</h3>
         <h3>Type: {pokemon.type}</h3>
         <h3>Hp: {pokemon.hp}</h3>
